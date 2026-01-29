@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/mercadolivro?createDatabaseIfNotExist=true
-    username: root
-    password: k4mim4shit4
+    url:
+    username:
+    password:
     driver-class-name: com.mysql.cj.jdbc.Driver
   flyway:
     enabled: true
@@ -16,10 +16,7 @@ spring:
   jackson:
     default-property-inclusion: non_null
 jwt:
-  # A chave secreta usada para assinar o token.
-  # Em produção, usa uma string longa e aleatória (ex: UUID) e guarda em variáveis de ambiente.
-  secret: SenhaTopSecretDoMercadoLivro123
-
+  secret:
   # Tempo de expiração em milissegundos
   # 60000 = 1 minuto
   # 3600000 = 1 hora
